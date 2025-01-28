@@ -1,0 +1,8 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/chenqinxinghao/Desktop/Code/Courses/Comp537/practise/pthread'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _thread_function, symObjAddr: 0x0, symBinAddr: 0x100003EA0, symSize: 0x38 }
+  - { offsetInCU: 0x4E, offset: 0x4E, size: 0x8, addend: 0x0, symName: _thread_function, symObjAddr: 0x0, symBinAddr: 0x100003EA0, symSize: 0x38 }
+  - { offsetInCU: 0x84, offset: 0x84, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x38, symBinAddr: 0x100003ED8, symSize: 0x7C }
+...
