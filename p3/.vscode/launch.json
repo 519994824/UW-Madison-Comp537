@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug p3",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/solution/wsh",
+            "args": ["${workspaceFolder}/solution/script.wsh"],
+            // "args": ["<<< env"],
+            "cwd": "${workspaceFolder}",
+            "externalConsole": false,
+            "internalConsoleOptions": "neverOpen",
+            // "setupCommands": [
+            //     {
+            //         "description": "Enable LLDB follow-fork-mode",
+            //         "text": "settings set target.process.follow-fork-mode child",  // 设置为调试子进程
+            //         "ignoreFailures": true
+            //     },
+            //     {
+            //         "description": "Enable process fork events",
+            //         "text": "settings set target.process.enable-process-fork-events true",  // 启用fork事件调试
+            //         "ignoreFailures": true
+            //     }
+            // ],
+            "MIMode": "gdb",  // 使用 LLDB 代替 GDB
+            "preLaunchTask": "build"
+        },
+    ]
+}

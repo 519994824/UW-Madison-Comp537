@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Launch C Program",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${fileDirname}/${fileBasenameNoExtension}",
+        "args": ["tests", "1"],   // 在这里添加你要传递的参数
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": true,   // 如果你希望在外部终端运行程序
+        "MIMode": "gdb",
+        "miDebuggerPath": "/usr/bin/gdb",  // 调试器路径（Linux环境下，如果是Windows可能是 "C:\\MinGW\\bin\\gdb.exe"）
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+        "preLaunchTask": "C/C++: gcc build active file",   // 先编译任务
+        "internalConsoleOptions": "neverOpen"
+      }
+    ]
+  }

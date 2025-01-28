@@ -1,0 +1,12 @@
+Makefile
+script.wsh
+valgrind.rpt
+wsh
+wsh-dbg
+wsh-dbg.dSYM
+wsh.c
+wsh.dSYM
+wsh.h
+wsh_v2.c
+wsh_v3.c
+wsh_v4.c

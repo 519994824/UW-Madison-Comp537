@@ -1,0 +1,213 @@
+==653181== Memcheck, a memory error detector
+==653181== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==653181== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==653181== Command: wsh-dbg
+==653181== Parent PID: 646313
+==653181== 
+==653181== Invalid read of size 1
+==653181==    at 0x484ED16: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==653181==    by 0x48EED30: __vfprintf_internal (vfprintf-internal.c:1517)
+==653181==    by 0x4900499: __vsnprintf_internal (vsnprintf.c:114)
+==653181==    by 0x49ACB34: __snprintf_chk (snprintf_chk.c:38)
+==653181==    by 0x10B0F9: snprintf (stdio2.h:71)
+==653181==    by 0x10B0F9: find_executable (wsh.c:237)
+==653181==    by 0x10B19F: exec_fork (wsh.c:259)
+==653181==    by 0x10B447: built_in_history (wsh.c:524)
+==653181==    by 0x10B707: handle_built_in_command (wsh.c:649)
+==653181==    by 0x10B8B9: loop_propmt (wsh.c:692)
+==653181==    by 0x10BBD8: main (wsh.c:817)
+==653181==  Address 0x4aa7720 is 0 bytes inside a block of size 8 free'd
+==653181==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==653181==    by 0x10B43F: built_in_history (wsh.c:523)
+==653181==    by 0x10B707: handle_built_in_command (wsh.c:649)
+==653181==    by 0x10B8B9: loop_propmt (wsh.c:692)
+==653181==    by 0x10BBD8: main (wsh.c:817)
+==653181==  Block was alloc'd at
+==653181==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==653181==    by 0x492058E: strdup (strdup.c:42)
+==653181==    by 0x10B429: built_in_history (wsh.c:520)
+==653181==    by 0x10B707: handle_built_in_command (wsh.c:649)
+==653181==    by 0x10B8B9: loop_propmt (wsh.c:692)
+==653181==    by 0x10BBD8: main (wsh.c:817)
+==653181== 
+==653181== Invalid read of size 1
+==653181==    at 0x484ED24: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==653181==    by 0x48EED30: __vfprintf_internal (vfprintf-internal.c:1517)
+==653181==    by 0x4900499: __vsnprintf_internal (vsnprintf.c:114)
+==653181==    by 0x49ACB34: __snprintf_chk (snprintf_chk.c:38)
+==653181==    by 0x10B0F9: snprintf (stdio2.h:71)
+==653181==    by 0x10B0F9: find_executable (wsh.c:237)
+==653181==    by 0x10B19F: exec_fork (wsh.c:259)
+==653181==    by 0x10B447: built_in_history (wsh.c:524)
+==653181==    by 0x10B707: handle_built_in_command (wsh.c:649)
+==653181==    by 0x10B8B9: loop_propmt (wsh.c:692)
+==653181==    by 0x10BBD8: main (wsh.c:817)
+==653181==  Address 0x4aa7721 is 1 bytes inside a block of size 8 free'd
+==653181==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==653181==    by 0x10B43F: built_in_history (wsh.c:523)
+==653181==    by 0x10B707: handle_built_in_command (wsh.c:649)
+==653181==    by 0x10B8B9: loop_propmt (wsh.c:692)
+==653181==    by 0x10BBD8: main (wsh.c:817)
+==653181==  Block was alloc'd at
+==653181==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==653181==    by 0x492058E: strdup (strdup.c:42)
+==653181==    by 0x10B429: built_in_history (wsh.c:520)
+==653181==    by 0x10B707: handle_built_in_command (wsh.c:649)
+==653181==    by 0x10B8B9: loop_propmt (wsh.c:692)
+==653181==    by 0x10BBD8: main (wsh.c:817)
+==653181== 
+==653181== Invalid read of size 1
+==653181==    at 0x4905FB0: _IO_default_xsputn (genops.c:394)
+==653181==    by 0x4905FB0: _IO_default_xsputn (genops.c:370)
+==653181==    by 0x48EF00B: outstring_func (vfprintf-internal.c:239)
+==653181==    by 0x48EF00B: __vfprintf_internal (vfprintf-internal.c:1517)
+==653181==    by 0x4900499: __vsnprintf_internal (vsnprintf.c:114)
+==653181==    by 0x49ACB34: __snprintf_chk (snprintf_chk.c:38)
+==653181==    by 0x10B0F9: snprintf (stdio2.h:71)
+==653181==    by 0x10B0F9: find_executable (wsh.c:237)
+==653181==    by 0x10B19F: exec_fork (wsh.c:259)
+==653181==    by 0x10B447: built_in_history (wsh.c:524)
+==653181==    by 0x10B707: handle_built_in_command (wsh.c:649)
+==653181==    by 0x10B8B9: loop_propmt (wsh.c:692)
+==653181==    by 0x10BBD8: main (wsh.c:817)
+==653181==  Address 0x4aa7720 is 0 bytes inside a block of size 8 free'd
+==653181==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==653181==    by 0x10B43F: built_in_history (wsh.c:523)
+==653181==    by 0x10B707: handle_built_in_command (wsh.c:649)
+==653181==    by 0x10B8B9: loop_propmt (wsh.c:692)
+==653181==    by 0x10BBD8: main (wsh.c:817)
+==653181==  Block was alloc'd at
+==653181==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==653181==    by 0x492058E: strdup (strdup.c:42)
+==653181==    by 0x10B429: built_in_history (wsh.c:520)
+==653181==    by 0x10B707: handle_built_in_command (wsh.c:649)
+==653181==    by 0x10B8B9: loop_propmt (wsh.c:692)
+==653181==    by 0x10BBD8: main (wsh.c:817)
+==653181== 
+==653181== Invalid read of size 1
+==653181==    at 0x4905FBE: _IO_default_xsputn (genops.c:393)
+==653181==    by 0x4905FBE: _IO_default_xsputn (genops.c:370)
+==653181==    by 0x48EF00B: outstring_func (vfprintf-internal.c:239)
+==653181==    by 0x48EF00B: __vfprintf_internal (vfprintf-internal.c:1517)
+==653181==    by 0x4900499: __vsnprintf_internal (vsnprintf.c:114)
+==653181==    by 0x49ACB34: __snprintf_chk (snprintf_chk.c:38)
+==653181==    by 0x10B0F9: snprintf (stdio2.h:71)
+==653181==    by 0x10B0F9: find_executable (wsh.c:237)
+==653181==    by 0x10B19F: exec_fork (wsh.c:259)
+==653181==    by 0x10B447: built_in_history (wsh.c:524)
+==653181==    by 0x10B707: handle_built_in_command (wsh.c:649)
+==653181==    by 0x10B8B9: loop_propmt (wsh.c:692)
+==653181==    by 0x10BBD8: main (wsh.c:817)
+==653181==  Address 0x4aa7722 is 2 bytes inside a block of size 8 free'd
+==653181==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==653181==    by 0x10B43F: built_in_history (wsh.c:523)
+==653181==    by 0x10B707: handle_built_in_command (wsh.c:649)
+==653181==    by 0x10B8B9: loop_propmt (wsh.c:692)
+==653181==    by 0x10BBD8: main (wsh.c:817)
+==653181==  Block was alloc'd at
+==653181==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==653181==    by 0x492058E: strdup (strdup.c:42)
+==653181==    by 0x10B429: built_in_history (wsh.c:520)
+==653181==    by 0x10B707: handle_built_in_command (wsh.c:649)
+==653181==    by 0x10B8B9: loop_propmt (wsh.c:692)
+==653181==    by 0x10BBD8: main (wsh.c:817)
+==653181== 
+==653181== Syscall param access(pathname) points to unaddressable byte(s)
+==653181==    at 0x498C94B: access (access.c:27)
+==653181==    by 0x10B125: find_executable (wsh.c:245)
+==653181==    by 0x10B19F: exec_fork (wsh.c:259)
+==653181==    by 0x10B447: built_in_history (wsh.c:524)
+==653181==    by 0x10B707: handle_built_in_command (wsh.c:649)
+==653181==    by 0x10B8B9: loop_propmt (wsh.c:692)
+==653181==    by 0x10BBD8: main (wsh.c:817)
+==653181==  Address 0x4aa7720 is 0 bytes inside a block of size 8 free'd
+==653181==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==653181==    by 0x10B43F: built_in_history (wsh.c:523)
+==653181==    by 0x10B707: handle_built_in_command (wsh.c:649)
+==653181==    by 0x10B8B9: loop_propmt (wsh.c:692)
+==653181==    by 0x10BBD8: main (wsh.c:817)
+==653181==  Block was alloc'd at
+==653181==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==653181==    by 0x492058E: strdup (strdup.c:42)
+==653181==    by 0x10B429: built_in_history (wsh.c:520)
+==653181==    by 0x10B707: handle_built_in_command (wsh.c:649)
+==653181==    by 0x10B8B9: loop_propmt (wsh.c:692)
+==653181==    by 0x10BBD8: main (wsh.c:817)
+==653181== 
+==653874== Syscall param access(pathname) points to unaddressable byte(s)
+==653874==    at 0x498C94B: access (access.c:27)
+==653874==    by 0x10B125: find_executable (wsh.c:245)
+==653874==    by 0x10B283: exec_fork (wsh.c:287)
+==653874==    by 0x10B447: built_in_history (wsh.c:524)
+==653874==    by 0x10B707: handle_built_in_command (wsh.c:649)
+==653874==    by 0x10B8B9: loop_propmt (wsh.c:692)
+==653874==    by 0x10BBD8: main (wsh.c:817)
+==653874==  Address 0x4aa7720 is 0 bytes inside a block of size 8 free'd
+==653874==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==653874==    by 0x10B43F: built_in_history (wsh.c:523)
+==653874==    by 0x10B707: handle_built_in_command (wsh.c:649)
+==653874==    by 0x10B8B9: loop_propmt (wsh.c:692)
+==653874==    by 0x10BBD8: main (wsh.c:817)
+==653874==  Block was alloc'd at
+==653874==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==653874==    by 0x492058E: strdup (strdup.c:42)
+==653874==    by 0x10B429: built_in_history (wsh.c:520)
+==653874==    by 0x10B707: handle_built_in_command (wsh.c:649)
+==653874==    by 0x10B8B9: loop_propmt (wsh.c:692)
+==653874==    by 0x10BBD8: main (wsh.c:817)
+==653874== 
+==653874== Syscall param execve(argv[i]) points to unaddressable byte(s)
+==653874==    at 0x496308B: execve (syscall-template.S:120)
+==653874==    by 0x10B2BE: exec_fork (wsh.c:294)
+==653874==    by 0x10B447: built_in_history (wsh.c:524)
+==653874==    by 0x10B707: handle_built_in_command (wsh.c:649)
+==653874==    by 0x10B8B9: loop_propmt (wsh.c:692)
+==653874==    by 0x10BBD8: main (wsh.c:817)
+==653874==  Address 0x4aa7720 is 0 bytes inside a block of size 8 free'd
+==653874==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==653874==    by 0x10B43F: built_in_history (wsh.c:523)
+==653874==    by 0x10B707: handle_built_in_command (wsh.c:649)
+==653874==    by 0x10B8B9: loop_propmt (wsh.c:692)
+==653874==    by 0x10BBD8: main (wsh.c:817)
+==653874==  Block was alloc'd at
+==653874==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==653874==    by 0x492058E: strdup (strdup.c:42)
+==653874==    by 0x10B429: built_in_history (wsh.c:520)
+==653874==    by 0x10B707: handle_built_in_command (wsh.c:649)
+==653874==    by 0x10B8B9: loop_propmt (wsh.c:692)
+==653874==    by 0x10BBD8: main (wsh.c:817)
+==653874== 
+==653181== 
+==653181== HEAP SUMMARY:
+==653181==     in use at exit: 90 bytes in 3 blocks
+==653181==   total heap usage: 137 allocs, 134 frees, 6,628 bytes allocated
+==653181== 
+==653181== 5 bytes in 1 blocks are still reachable in loss record 1 of 3
+==653181==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==653181==    by 0x492058E: strdup (strdup.c:42)
+==653181==    by 0x10AEE8: replace_vars_in_first_token (wsh.c:191)
+==653181==    by 0x10B88C: loop_propmt (wsh.c:687)
+==653181==    by 0x10BBD8: main (wsh.c:817)
+==653181== 
+==653181== 5 bytes in 1 blocks are still reachable in loss record 2 of 3
+==653181==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==653181==    by 0x492058E: strdup (strdup.c:42)
+==653181==    by 0x10B8AE: loop_propmt (wsh.c:691)
+==653181==    by 0x10BBD8: main (wsh.c:817)
+==653181== 
+==653181== 80 bytes in 1 blocks are still reachable in loss record 3 of 3
+==653181==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==653181==    by 0x10AFD4: split_input_to_token (wsh.c:206)
+==653181==    by 0x10B6C2: handle_built_in_command (wsh.c:643)
+==653181==    by 0x10B8B9: loop_propmt (wsh.c:692)
+==653181==    by 0x10BBD8: main (wsh.c:817)
+==653181== 
+==653181== LEAK SUMMARY:
+==653181==    definitely lost: 0 bytes in 0 blocks
+==653181==    indirectly lost: 0 bytes in 0 blocks
+==653181==      possibly lost: 0 bytes in 0 blocks
+==653181==    still reachable: 90 bytes in 3 blocks
+==653181==         suppressed: 0 bytes in 0 blocks
+==653181== 
+==653181== For lists of detected and suppressed errors, rerun with: -s
+==653181== ERROR SUMMARY: 10 errors from 5 contexts (suppressed: 0 from 0)

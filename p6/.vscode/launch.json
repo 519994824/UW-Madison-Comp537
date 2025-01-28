@@ -1,0 +1,63 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug mkdir d1 in wfs",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/solution/wfs", // 可执行文件路径
+        "args": ["test-disk1", "test-disk2", "-s", "mnt"], // wfs 的运行参数
+        "cwd": "${workspaceFolder}/tests", // 调试器的工作目录
+        "preLaunchTask": "Run All Commands", // 在调试前先执行环境初始化任务
+        "stopAtEntry": false,
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb", // 使用 gdb 调试器
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ]
+      },
+      {
+        "name": "Execute: cd mnt && mkdir d1",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "/bin/bash", // 使用系统的 shell 执行命令
+        "args": ["-c", "cd mnt && mkdir d1"], // 模拟执行命令
+        "cwd": "${workspaceFolder}/tests", // 确保命令的工作目录正确
+        "stopAtEntry": false,
+        "environment": [],
+        "externalConsole": false
+      },
+      {
+        "name": "Cleanup Environment",
+        "type": "cppdbg", // 可使用 cppdbg 类型，但实际上不会触发调试
+        "request": "launch",
+        "program": "/bin/bash", // 使用系统的 shell 来执行清理命令
+        "args": ["-c", "echo Cleanup Complete"], // 可替换为调试命令
+        "cwd": "${workspaceFolder}/tests",
+        "preLaunchTask": "Cleanup Environment", // 指定在调试前执行清理任务
+        "stopAtEntry": false,
+        "environment": [],
+        "externalConsole": false
+      },
+      {
+        "name": "Run wfs-check-metadata.py",
+        "type": "debugpy", // 使用 Python 调试器
+        "request": "launch",
+        "program": "${workspaceFolder}/tests/wfs-check-metadata.py", // 脚本路径
+        "args": [
+          "--mode", "raid1",
+          "--blocks", "1",
+          "--dirs", "2",
+          "--files", "0",
+          "--disks", "test-disk1", "test-disk2"
+        ],
+        "cwd": "${workspaceFolder}/tests", // 工作目录
+        "console": "integratedTerminal" // 在集成终端中运行
+      }
+    ]
+  }

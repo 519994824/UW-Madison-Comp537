@@ -1,0 +1,37 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     wsh-dbg
+relocations:
+  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x8, addend: 0x0, symName: _built_in_exit, symObjAddr: 0x0, symBinAddr: 0x100002AD4, symSize: 0x44 }
+  - { offsetInCU: 0x37, offset: 0x37, size: 0x8, addend: 0x0, symName: _shell_vars, symObjAddr: 0x5F90, symBinAddr: 0x100008078, symSize: 0x0 }
+  - { offsetInCU: 0xAC, offset: 0xAC, size: 0x8, addend: 0x0, symName: _built_ins, symObjAddr: 0x1288, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offsetInCU: 0x130, offset: 0x130, size: 0x8, addend: 0x0, symName: _path_variable, symObjAddr: 0x5F98, symBinAddr: 0x100008090, symSize: 0x0 }
+  - { offsetInCU: 0x145, offset: 0x145, size: 0x8, addend: 0x0, symName: _stdin_backup, symBinAddr: 0x100008084, symSize: 0x0 }
+  - { offsetInCU: 0x15A, offset: 0x15A, size: 0x8, addend: 0x0, symName: _stdout_backup, symBinAddr: 0x100008088, symSize: 0x0 }
+  - { offsetInCU: 0x16F, offset: 0x16F, size: 0x8, addend: 0x0, symName: _stderr_backup, symBinAddr: 0x100008080, symSize: 0x0 }
+  - { offsetInCU: 0x184, offset: 0x184, size: 0x8, addend: 0x0, symName: _history_count, symObjAddr: 0x5FA0, symBinAddr: 0x100008098, symSize: 0x0 }
+  - { offsetInCU: 0x1A0, offset: 0x1A0, size: 0x8, addend: 0x0, symName: _history, symObjAddr: 0x5FA8, symBinAddr: 0x1000080A0, symSize: 0x0 }
+  - { offsetInCU: 0x1B5, offset: 0x1B5, size: 0x8, addend: 0x0, symName: _history_capacity, symObjAddr: 0x12F8, symBinAddr: 0x100008070, symSize: 0x0 }
+  - { offsetInCU: 0x1CB, offset: 0x1CB, size: 0x8, addend: 0x0, symName: _built_in_exit, symObjAddr: 0x0, symBinAddr: 0x100002AD4, symSize: 0x44 }
+  - { offsetInCU: 0x224, offset: 0x224, size: 0x8, addend: 0x0, symName: _built_in_cd, symObjAddr: 0x44, symBinAddr: 0x100002B18, symSize: 0x48 }
+  - { offsetInCU: 0x29C, offset: 0x29C, size: 0x8, addend: 0x0, symName: _built_in_export, symObjAddr: 0x8C, symBinAddr: 0x100002B60, symSize: 0x5C }
+  - { offsetInCU: 0x31F, offset: 0x31F, size: 0x8, addend: 0x0, symName: _built_in_local, symObjAddr: 0xE8, symBinAddr: 0x100002BBC, symSize: 0x54 }
+  - { offsetInCU: 0x38C, offset: 0x38C, size: 0x8, addend: 0x0, symName: _set_shell_var, symObjAddr: 0xB20, symBinAddr: 0x1000035F4, symSize: 0x12C }
+  - { offsetInCU: 0x415, offset: 0x415, size: 0x8, addend: 0x0, symName: _built_in_vars, symObjAddr: 0x13C, symBinAddr: 0x100002C10, symSize: 0x50 }
+  - { offsetInCU: 0x458, offset: 0x458, size: 0x8, addend: 0x0, symName: _built_in_history, symObjAddr: 0x18C, symBinAddr: 0x100002C60, symSize: 0x1C0 }
+  - { offsetInCU: 0x5F2, offset: 0x5F2, size: 0x8, addend: 0x0, symName: _split_input_to_token, symObjAddr: 0x8A0, symBinAddr: 0x100003374, symSize: 0xB0 }
+  - { offsetInCU: 0x655, offset: 0x655, size: 0x8, addend: 0x0, symName: _exec_fork, symObjAddr: 0xA2C, symBinAddr: 0x100003500, symSize: 0xF4 }
+  - { offsetInCU: 0x731, offset: 0x731, size: 0x8, addend: 0x0, symName: _built_in_ls, symObjAddr: 0x34C, symBinAddr: 0x100002E20, symSize: 0x108 }
+  - { offsetInCU: 0xA41, offset: 0xA41, size: 0x8, addend: 0x0, symName: _determine_annotation, symObjAddr: 0x454, symBinAddr: 0x100002F28, symSize: 0x68 }
+  - { offsetInCU: 0xAA3, offset: 0xAA3, size: 0x8, addend: 0x0, symName: _restore_redirection, symObjAddr: 0x4BC, symBinAddr: 0x100002F90, symSize: 0x48 }
+  - { offsetInCU: 0xAE2, offset: 0xAE2, size: 0x8, addend: 0x0, symName: _parse_and_execute, symObjAddr: 0x504, symBinAddr: 0x100002FD8, symSize: 0x238 }
+  - { offsetInCU: 0xB09, offset: 0xB09, size: 0x8, addend: 0x0, symName: _parse_and_execute, symObjAddr: 0x504, symBinAddr: 0x100002FD8, symSize: 0x238 }
+  - { offsetInCU: 0xC9E, offset: 0xC9E, size: 0x8, addend: 0x0, symName: _replace_vars_in_token, symObjAddr: 0x73C, symBinAddr: 0x100003210, symSize: 0x164 }
+  - { offsetInCU: 0xD90, offset: 0xD90, size: 0x8, addend: 0x0, symName: _find_executable, symObjAddr: 0x950, symBinAddr: 0x100003424, symSize: 0xDC }
+  - { offsetInCU: 0xE9E, offset: 0xE9E, size: 0x8, addend: 0x0, symName: _free_shell_vars, symObjAddr: 0xC4C, symBinAddr: 0x100003720, symSize: 0x34 }
+  - { offsetInCU: 0xED2, offset: 0xED2, size: 0x8, addend: 0x0, symName: _handle_built_in_command, symObjAddr: 0xC80, symBinAddr: 0x100003754, symSize: 0xC0 }
+  - { offsetInCU: 0xF9F, offset: 0xF9F, size: 0x8, addend: 0x0, symName: _loop_propmt, symObjAddr: 0xD40, symBinAddr: 0x100003814, symSize: 0x234 }
+  - { offsetInCU: 0x139D, offset: 0x139D, size: 0x8, addend: 0x0, symName: _free_memory, symObjAddr: 0xF74, symBinAddr: 0x100003A48, symSize: 0xD0 }
+  - { offsetInCU: 0x142F, offset: 0x142F, size: 0x8, addend: 0x0, symName: _starts_with_special_prefix, symObjAddr: 0x1044, symBinAddr: 0x100003B18, symSize: 0x88 }
+  - { offsetInCU: 0x1466, offset: 0x1466, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x10CC, symBinAddr: 0x100003BA0, symSize: 0x128 }
+...

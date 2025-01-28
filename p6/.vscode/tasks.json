@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Run All Commands",
+        "type": "shell",
+        "command": "cd ../solution && make clean && make && cd - && mkdir -p mnt && truncate -s 1M test-disk1 && truncate -s 1M test-disk2 && ../solution/mkfs -r 1 -d test-disk1 -d test-disk2 -i 32 -b 200",
+        "problemMatcher": [],
+        "options": {
+          "cwd": "${workspaceFolder}/tests"
+        }
+      },
+      {
+        "label": "Cleanup Environment",
+        "type": "shell",
+        "command": "umount mnt && rm -rf mnt test-disk1 test-disk2 test_out.txt",
+        "problemMatcher": [],
+        "options": {
+          "cwd": "${workspaceFolder}/tests" // 确保工作目录为 tests
+        }
+      }
+    ]
+  }
